@@ -4,7 +4,7 @@
 # protocols: a hash of service => ipaddressORhostname:portnumber
 #
 class sslh(
-  $hosts     = { $ipaddress => '443' },
+  $hosts     = { "${ipaddress}" => '443' },
   $protocols = {
     ssh     => 'localhost:22',
     ssl     => 'localhost:443',
